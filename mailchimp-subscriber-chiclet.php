@@ -13,13 +13,13 @@
  * Version:           1.0.0
  * Author:            Gavin Rehkemper
  * Author URI:        http://gavinr.com
- * Text Domain:       mailchimp-subscriber-chiclet-for-wordpress
+ * Text Domain:       mailchimp-subscriber-chiclet
  * Domain Path:       /languages
  */
 include "MailChimp.php";
 function mailchimpSubscriberChiclet($listId, $color, $link, $postFixText) {
 	$adminOptions = get_option( 'mc_settings' );
-	$MailChimp = new \Drewm\MailChimp($adminOptions['mc_text_field_0']);
+	$MailChimp = new MailChimp($adminOptions['mc_text_field_0']);
 	$lists = $MailChimp->call('lists/list');
 	$returnString = "";
 	
@@ -67,7 +67,7 @@ function showGenerateShortcodeSection() {
 	$apiKey = $adminOptions['mc_text_field_0'];
 
 	if($apiKey) {
-		$MailChimp = new \Drewm\MailChimp($apiKey ); 
+		$MailChimp = new MailChimp($apiKey ); 
 		$lists = $MailChimp->call('lists/list');
 		if($lists) {
 			echo '1. Choose your list:<br />';
@@ -122,7 +122,7 @@ class mailchimp_subscriber_chiclet_options_page {
 		add_action( 'admin_init', array( $this, 'mc_settings_init' ) );
 	}
 	function admin_menu () {
-		add_options_page('MailChimp Subscriber Chiclet Options', 'MailChimp Subscriber Chiclet', 'manage_options', 'mailchimp-subscriber-chiclet-for-wordpress-options.php', array( $this, 'mc_options_page' ) );
+		add_options_page('MailChimp Subscriber Chiclet Options', 'MailChimp Subscriber Chiclet', 'manage_options', 'mailchimp-subscriber-chiclet-options.php', array( $this, 'mc_options_page' ) );
 	}
 	function enqueueScripts() {
 		wp_enqueue_script('mscw-admin-script', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery' ));

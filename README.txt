@@ -1,4 +1,4 @@
-=== MailChimp Subscriber Chiclet for WordPress ===
+=== MailChimp Subscriber Chiclet ===
 Contributors: gavinr
 Donate link: http://gavinr.com/donate
 Tags: mailchimp, chiclet, subscribers, mc
@@ -8,7 +8,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Display the numbers of MailChimp subscribers you have on your WordPress site.
+Display the number of MailChimp subscribers you have on your WordPress site.
 
 == Description ==
 
@@ -16,9 +16,9 @@ This plugin allows you to display the number of MailChimp subscribers you have, 
 
 == Installation ==
 
-1. Upload the plugin zip file to the `/wp-content/plugins/` directory, or search in WordPress for "MailChimp Subscriber Chiclet for WordPress"
+1. Upload the plugin zip file to the `/wp-content/plugins/` directory, or search in WordPress for "MailChimp Subscriber Chiclet"
 2. Activate the plugin.
-1. Go to `Settings > MailChimp Subscriber Chiclet for WordPress` and set your MailChimp API key, then copy/paste a shortcode from there to anywhere (Pages, Posts, Text Widget) in your site!
+1. Go to `Settings > MailChimp Subscriber Chiclet` and set your MailChimp API key, then copy/paste a shortcode from there to anywhere (Pages, Posts, Text Widget) in your site!
 
 == Frequently Asked Questions ==
 
