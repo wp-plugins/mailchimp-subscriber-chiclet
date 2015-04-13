@@ -32,11 +32,11 @@ Go here and login: https://admin.mailchimp.com/account/api-key-popup  ... BAM!
 
 = What colors are available for the Chiclet? =
 
-Blue, Red, Yellow, and Black. More coming soon with the Pro version of this plugin.
+Blue, red, yellow, and black are available when you generate the shortcode. More colors are coming soon with the [Pro version](http://www.gavinr.com/mailchimp-subscriber-chiclet-for-wordpress) of this plugin.
 
 = How do I add the Chiclet programmatically? =
 
-To add the plugin to your theme (like the footer.php file), use the `do_shortcode` method of WordPress. See the screenshots.
+To add the plugin to your theme (like the footer.php file), use the `do_shortcode` method of WordPress. See the screenshots for details.
 
 == Screenshots ==
 
